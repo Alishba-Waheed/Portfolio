@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    background-color: #E5D0FF; /* Light purple background for the whole page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6A1B9A; /* Purple background */
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.125rem;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section: Light Purple Background */
+.hero {
+    position: relative;
+    background-color: #E5D0FF; /* Light purple background for hero section */
+    height: 100vh; /* Full height of the screen */
+    text-align: center;
+    padding-top: 100px; /* Space for the fixed navbar */
+}
+
+/* Dark Overlay for Hero Section Text Visibility */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Subtle dark overlay */
+    z-index: 0;
+}
+
+/* Hero Content */
+.hero .content {
+    position: relative;
+    z-index: 1;
+    color: white; /* White text color for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero Header - Making it Larger and Stylish */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5E4B8B; /* Darker purple for heading */
+}
+
+/* Hero Subheading */
+.hero p {
+    font-size: 1.25rem;
+    color: #6D4C9C; /* Light purple for the subheading */
+    margin-top: 10px;
+}
+
+/* Button Animations */
+button, a {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styles */
+button, a {
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+/* GitHub Button: Purple */
+#contact .github-btn {
+    background-color: #6A1B9A; /* Purple color */
+    color: white;
+}
+
+#contact .github-btn:hover {
+    background-color: #9C4D96; /* Lighter Purple on hover */
+}
+
+/* LinkedIn Button: Blue */
+#contact .linkedin-btn {
+    background-color: #0077B5; /* LinkedIn Blue */
+    color: white;
+}
+
+#contact .linkedin-btn:hover {
+    background-color: #006085; /* Darker Blue on hover */
+}
+
+/* Email Button: Red */
+#contact .email-btn {
+    background-color: #D32F2F; /* Red color */
+    color: white;
+}
+
+#contact .email-btn:hover {
+    background-color: #C62828; /* Darker Red on hover */
+}
+
+/* Contact Section: Darker Background for Contrast */
+#contact {
+    background: rgba(38, 38, 38, 0.7); /* Dark background for the contact section */
+    color: white; /* Make text white to stand out */
+    padding: 50px 0;
+}
+
+/* Contact Section Headings */
+#contact h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFEB3B; /* Yellow color for a pop effect */
+}
+
+/* Contact Section Paragraph */
+#contact p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Button Customization */
+#contact a {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .text-lg, .text-md {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
